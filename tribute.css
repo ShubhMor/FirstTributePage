@@ -1,49 +1,78 @@
 
 * { font-family: monospace;
   background-color: white;
- ;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+ display: flex;
+ flex-direction: row;
+
+
+  width: 100%;
+  height: 52x;
+  background-color: white;
+  
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.box  {
+display: inline-flex;
+flex-direction: row;
+justify-content: space-around;
+  border: 2px solid black;
+  padding: 4px 15px;
+  cursor: pointer;
+ 
+}
+.box button {
+  display: inline-flex;
+
+  box-shadow: 0 0 2px black;
+  cursor: pointer;
+  margin: 3px;
+}
+.box button:hover{
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 5px black;
+  border: 2px solid white;
 }
 
 
-#vdo {
-max-width: 60%;
-max-height: auto;
-align-self: center;
-margin: 20px 20% 10px 20% ;
-border: 4px solid black;
+.tribute-data {
+  
+  margin: 0;
+  padding: 0;
+  display: flexbox;
+  justify-items: center;
+  flex-direction: column;
 
-}
-#title {
-  max-width: 100%;
-    text-align: center;
-    font-size: xx-large;
-    color: black;
-    margin: 6% 0% 0% 0%;
-    padding: 0%;
-}
-#caption {
-  max-width: 100%;
-    font-size:xx-small;
-    color: rgb(62, 61, 61);
-    text-shadow: 4px black;
-    text-align: center;
-    margin: 0%;
-    padding: 0%;
-}
 
-#para {
-    text-align: left;
-    margin: 5% 20% 4% 20%;
-    font-size: medium;
 }
 .titlesid{
   text-decoration: underline;
+   text-align: center;
+}
+.para {
+  display: flexbox;
+  justify-items: center;
+  flex-direction: column;
+
+    font-size: medium;
     text-align: center;
 }
+
 #tribute-link {
+  padding-top: 50px;
     float: right;
     font-size: x-small; ;
-    margin: 15px;
+    
 }
 #name {
   color: red;
@@ -52,4 +81,44 @@ border: 4px solid black;
 #dob {
   color: red;
 }
+
+
+.main {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 55vh;
+  
+}
+.vdo {
+  display: block;
+  justify-content: center;
+  flex-shrink: 5;
+  align-items: center;
+  object-fit: cover;
+  width: 64vw;
+  height: 36vh;
+  border: 4px solid black; 
+  box-shadow: 0px 5px 20px grey;
+}
+#video {
+  width: 64vw;
+  height: 36vh;
+}
+#title {
+    text-align: center;
+    font-size: xx-large;
+    font:  sans-serif;
+    color: black;
+}
+#caption {
+  
+    font-size:small;
+    color: rgb(62, 61, 61);
+    text-shadow: 4px black;
+}
+
 
